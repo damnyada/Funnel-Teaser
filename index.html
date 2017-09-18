@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<link rel="icon" href="assets/img/favicon.png">
+	<title>funnel</title>
+</head>
+<body>
+	<div class="content">
+		<a class="logo-wrapper" href="/">
+			<h1 id="logo">funnel</h1>
+		</a>
+		<a class="partner-wrapper" href="https://www.facebook.com/youngbrasil/" target="_blank">
+			<span class="partner">Young & Rubicam</span>
+		</a>
+	</div>
+	<style type="text/css">
+		html, body, .content {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html, body {
+			background: #ff5040;
+		}
+		body {
+			padding: 15px;
+		}
+		.content {
+			background: #202020 url(assets/img/bg.png) left top;
+			position: relative;
+			overflow: hidden;
+		}
+		.content:before {
+			content: '';
+			background: url(assets/img/concept-left.png) no-repeat left bottom / contain;
+			position: absolute;
+			left: -20px;
+			bottom: -10px;
+			height: 100%;
+			width: 100%;
+			/*max-height: 320px;*/
+		}
+		.content:after {
+			content: '';
+			background: url(assets/img/concept-right.png) no-repeat right top / contain;
+			position: absolute;
+			right: -15px;
+			top: -15px;
+			height: 100%;
+			width: 60%;
+			/*max-height: 150px;*/
+		}
+		.logo-wrapper {
+			display: block;
+			padding: 0 20px;
+			margin: 0;
+			max-width: 222px;
+			max-height: 103px;
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		#logo {
+			background: url(assets/img/marca_funnel.png) no-repeat center / contain;
+			text-indent: -9999999px;
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		.partner-wrapper {
+			display: block;
+			position: absolute;
+			bottom: 14px;
+			right: 18px;
+		}
+		.partner {
+			display: block;
+			background: url(assets/img/young.png) no-repeat center top / contain;
+			height: 28px;
+			width: 75px;
+			text-indent: -9999999px;
+		}
+		@media (min-width: 590px) and (orientation:landscape) {
+			.content:before {
+				width: 55%
+			}
+			.content:after {
+				width: 36%;
+			}
+		}
+		@media (min-width:900px) {
+			body {
+				padding: 35px;
+			}
+			.logo-wrapper {
+				max-width: 282px;
+				max-height: 103px;
+			}
+			.content:before {
+				max-height: 502px;
+				max-width: 785px;
+				left: -20px;
+				bottom: -10px;
+				width: 100%;
+			}
+			.content:after {
+				max-height: 395px;
+				max-width: 477px;
+				right: -35px;
+				top: -35px;
+				width: 100%;
+			}
+			.partner-wrapper {
+				bottom: 17px;
+				right: 23px;
+			}
+			.partner {
+				height: 37px;
+				width: 100px;
+			}
+		}
+		@media (min-width:1920px) {
+			body {
+				padding: 55px;
+			}
+			.content:before {
+				max-height: 757px;
+				max-width: 1183px;
+				left: -23px;
+				bottom: -20px;
+			}
+			.content:after {
+				max-height: 531px;
+				max-width: 1183px;
+				right: -55px;
+				top: -55px;
+			}
+			.logo-wrapper {
+				max-width: 372px;
+				max-height: 140px;
+			}
+			.partner-wrapper {
+				bottom: 19px;
+				right: 25px;
+			}
+			.partner {
+				height: 50px;
+				width: 136px;
+			}
+		}
+	</style>
+</body>
+</html>
